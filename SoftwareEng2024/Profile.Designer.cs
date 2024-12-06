@@ -36,8 +36,6 @@
             this.lblname = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.CONBTN = new System.Windows.Forms.Button();
             this.Memebrship_icon = new System.Windows.Forms.PictureBox();
@@ -52,9 +50,11 @@
             this.Membership = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Memebrship_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Event_icon)).BeginInit();
@@ -62,14 +62,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.Home_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -162,50 +163,20 @@
             this.panel2.Size = new System.Drawing.Size(614, 312);
             this.panel2.TabIndex = 27;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightCoral;
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1249, 159);
-            this.flowLayoutPanel1.TabIndex = 28;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.LightGray;
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1249, 0);
-            this.flowLayoutPanel2.TabIndex = 29;
-            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.btnLogout);
-            this.panel3.Controls.Add(this.CONBTN);
-            this.panel3.Controls.Add(this.Memebrship_icon);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.Event_icon);
-            this.panel3.Controls.Add(this.Home);
-            this.panel3.Controls.Add(this.Chat_icon);
-            this.panel3.Controls.Add(this.ChatBox_Button);
-            this.panel3.Controls.Add(this.Home_icon);
-            this.panel3.Controls.Add(this.Event);
-            this.panel3.Controls.Add(this.Profile_icon);
-            this.panel3.Controls.Add(this.Membership);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 159);
+            this.panel3.BackColor = System.Drawing.Color.LightCoral;
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 534);
+            this.panel3.Size = new System.Drawing.Size(1249, 146);
             this.panel3.TabIndex = 29;
             // 
             // CONBTN
             // 
-            this.CONBTN.Location = new System.Drawing.Point(81, 239);
+            this.CONBTN.Location = new System.Drawing.Point(80, 237);
             this.CONBTN.Name = "CONBTN";
             this.CONBTN.Size = new System.Drawing.Size(105, 32);
             this.CONBTN.TabIndex = 56;
@@ -215,7 +186,7 @@
             // Memebrship_icon
             // 
             this.Memebrship_icon.Image = global::SoftwareEng2024.Properties.Resources.membership;
-            this.Memebrship_icon.Location = new System.Drawing.Point(31, 201);
+            this.Memebrship_icon.Location = new System.Drawing.Point(30, 199);
             this.Memebrship_icon.Name = "Memebrship_icon";
             this.Memebrship_icon.Size = new System.Drawing.Size(44, 34);
             this.Memebrship_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,7 +195,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(81, 69);
+            this.button1.Location = new System.Drawing.Point(80, 67);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 34);
             this.button1.TabIndex = 46;
@@ -234,7 +205,7 @@
             // Event_icon
             // 
             this.Event_icon.Image = global::SoftwareEng2024.Properties.Resources.calendar_check;
-            this.Event_icon.Location = new System.Drawing.Point(31, 156);
+            this.Event_icon.Location = new System.Drawing.Point(30, 154);
             this.Event_icon.Name = "Event_icon";
             this.Event_icon.Size = new System.Drawing.Size(44, 34);
             this.Event_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -243,7 +214,7 @@
             // 
             // Home
             // 
-            this.Home.Location = new System.Drawing.Point(81, 21);
+            this.Home.Location = new System.Drawing.Point(80, 19);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(105, 34);
             this.Home.TabIndex = 47;
@@ -253,7 +224,7 @@
             // Chat_icon
             // 
             this.Chat_icon.Image = global::SoftwareEng2024.Properties.Resources.message;
-            this.Chat_icon.Location = new System.Drawing.Point(31, 114);
+            this.Chat_icon.Location = new System.Drawing.Point(30, 112);
             this.Chat_icon.Name = "Chat_icon";
             this.Chat_icon.Size = new System.Drawing.Size(44, 34);
             this.Chat_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +233,7 @@
             // 
             // ChatBox_Button
             // 
-            this.ChatBox_Button.Location = new System.Drawing.Point(81, 116);
+            this.ChatBox_Button.Location = new System.Drawing.Point(80, 114);
             this.ChatBox_Button.Name = "ChatBox_Button";
             this.ChatBox_Button.Size = new System.Drawing.Size(105, 32);
             this.ChatBox_Button.TabIndex = 48;
@@ -272,7 +243,7 @@
             // Home_icon
             // 
             this.Home_icon.Image = global::SoftwareEng2024.Properties.Resources.home;
-            this.Home_icon.Location = new System.Drawing.Point(31, 21);
+            this.Home_icon.Location = new System.Drawing.Point(30, 19);
             this.Home_icon.Name = "Home_icon";
             this.Home_icon.Size = new System.Drawing.Size(44, 34);
             this.Home_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -281,7 +252,7 @@
             // 
             // Event
             // 
-            this.Event.Location = new System.Drawing.Point(81, 156);
+            this.Event.Location = new System.Drawing.Point(80, 154);
             this.Event.Name = "Event";
             this.Event.Size = new System.Drawing.Size(105, 35);
             this.Event.TabIndex = 49;
@@ -291,7 +262,7 @@
             // Profile_icon
             // 
             this.Profile_icon.Image = global::SoftwareEng2024.Properties.Resources.user;
-            this.Profile_icon.Location = new System.Drawing.Point(31, 69);
+            this.Profile_icon.Location = new System.Drawing.Point(30, 67);
             this.Profile_icon.Name = "Profile_icon";
             this.Profile_icon.Size = new System.Drawing.Size(44, 34);
             this.Profile_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -300,7 +271,7 @@
             // 
             // Membership
             // 
-            this.Membership.Location = new System.Drawing.Point(81, 201);
+            this.Membership.Location = new System.Drawing.Point(80, 199);
             this.Membership.Name = "Membership";
             this.Membership.Size = new System.Drawing.Size(105, 32);
             this.Membership.TabIndex = 50;
@@ -310,7 +281,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SoftwareEng2024.Properties.Resources.logout;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 478);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 501);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -319,12 +290,55 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(68, 478);
+            this.btnLogout.Location = new System.Drawing.Point(80, 501);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(105, 32);
             this.btnLogout.TabIndex = 57;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.ChatBox_Button);
+            this.panel4.Controls.Add(this.btnLogout);
+            this.panel4.Controls.Add(this.Event);
+            this.panel4.Controls.Add(this.Chat_icon);
+            this.panel4.Controls.Add(this.Profile_icon);
+            this.panel4.Controls.Add(this.CONBTN);
+            this.panel4.Controls.Add(this.Home);
+            this.panel4.Controls.Add(this.Memebrship_icon);
+            this.panel4.Controls.Add(this.Membership);
+            this.panel4.Controls.Add(this.Event_icon);
+            this.panel4.Controls.Add(this.Home_icon);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 146);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 547);
+            this.panel4.TabIndex = 59;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Brown;
+            this.label2.Location = new System.Drawing.Point(71, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(221, 82);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Together \r\nCulture";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(71, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(222, 42);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "CAMBRIDGE";
             // 
             // Profile
             // 
@@ -339,14 +353,15 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Memebrship_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Event_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Chat_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -362,8 +377,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button CONBTN;
         private System.Windows.Forms.PictureBox Memebrship_icon;
         private System.Windows.Forms.Button button1;
@@ -377,5 +390,8 @@
         private System.Windows.Forms.Button Membership;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
