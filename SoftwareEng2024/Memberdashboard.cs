@@ -155,5 +155,10 @@ namespace SoftwareEng2024
                 MessageBox.Show($"Error fetching interests: {ex.Message}");
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

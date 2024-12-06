@@ -29,7 +29,7 @@ namespace SoftwareEng2024
         {
             try
             {
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\abhin\source\repos\protopppp\protopppp\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ashwin\Source\Repos\SoftwareEngabinavandash\SoftwareEng2024\Database2.mdf;Integrated Security=True";
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
