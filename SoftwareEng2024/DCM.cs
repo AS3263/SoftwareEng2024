@@ -14,10 +14,21 @@ namespace SoftwareEng2024
 {
     public partial class DCM : Form
     {
+        private bool isPanelExpanded = false;
+        private int panelWidth;
+        private int panel2Width = 150; // Reduced width for panel2
+        private int slideSpeed = 10;  // Adjust this for smoothness
+        private int gapSize = 10;
         public DCM()
         {
             InitializeComponent();
             LoadData();
+
+            panelWidth = 200; // Set the desired width
+            panel2.Width = 0; // Start with the panel collapsed
+            panel2.Visible = true;
+            panel1.Left = panel2.Right;
+
         }
         private void LoadData()
         {
@@ -90,5 +101,44 @@ namespace SoftwareEng2024
             mainForm.Show();
             this.Hide();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (isPanelExpanded)
+            {
+                // Expand the panel
+                if (panel2.Width < panel2Width) // Use the reduced width value
+                {
+                    panel2.Width += slideSpeed;
+                    panelContent.Left = panel2.Right + gapSize; // Add gap between panel2 and panelContent
+                }
+                else
+                {
+                    timer1.Stop(); // Stop the timer when fully expanded
+                }
+            }
+            else
+            {
+                // Collapse the panel
+                if (panel2.Width > 0)
+                {
+                    panel2.Width -= slideSpeed;
+                    panelContent.Left = panel2.Right + gapSize; // Maintain gap when collapsing
+                }
+                else
+                {
+                    timer1.Stop(); // Stop the timer when fully collapsed
+                }
+            }
+        }
+
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            isPanelExpanded = !isPanelExpanded;
+            timer1.Start();
+        }
     }
 }
+
