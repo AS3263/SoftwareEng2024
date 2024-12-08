@@ -15,11 +15,20 @@ namespace SoftwareEng2024
     public partial class Memberdashboard : Form
     {
         private int memberId; // Store the logged-in member's ID
+        private bool isPanelExpanded = false;
+        private int panelWidth;
+        private int panel1Width = 150; // Reduced width for panel1
+        private int slideSpeed = 10;  // Adjust this for smoothness
+        private int gapSize = 10;
 
         public Memberdashboard(int memberId)
         {
             InitializeComponent();
             this.memberId = memberId; // Assign the logged-in MemberID
+
+            panel1.Width = 0; // Start with the panel fully collapsed
+            panel1.Visible = true; // Ensure the panel is visible
+            panelContent.Left = panel1.Right + gapSize;
         }
 
         private void CONBTN_Click(object sender, EventArgs e)
@@ -159,6 +168,41 @@ namespace SoftwareEng2024
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            isPanelExpanded = !isPanelExpanded;
+            timer1.Start();
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (isPanelExpanded)
+            {
+                // Expand the panel
+                if (panel1.Width < panel1Width) // Use the reduced width value
+                {
+                    panel1.Width += slideSpeed;
+                }
+                else
+                {
+                    timer1.Stop(); // Stop the timer when fully expanded
+                }
+            }
+            else
+            {
+                // Collapse the panel
+                if (panel1.Width > 0)
+                {
+                    panel1.Width -= slideSpeed;
+                }
+                else
+                {
+                    timer1.Stop(); // Stop the timer when fully collapsed
+                }
+            }
         }
     }
 }

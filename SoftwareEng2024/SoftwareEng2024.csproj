@@ -212,6 +212,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\menu.png" />
     <None Include="Resources\tg6.jpg" />
     <None Include="Resources\tg5.jpg" />
     <None Include="Resources\tg4.jpg" />

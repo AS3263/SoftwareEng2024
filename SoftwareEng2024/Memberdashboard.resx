@@ -121,10 +121,12 @@
     <value>Think of ‘Together Culture’ as a noun. 
 
 Together Culture (n.) the product of turning up to collaborate in the acts of sharing, caring, learning, and experimenting which results in the spreading of gritty hope, through action. 
-
 You're capable of helping to shape an economy that is more inclusive and ecological. At Together Culture, we're shaping a world of work that supports everyone's wellbeing and shares prosperity.
 
 
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
