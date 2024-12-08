@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Memberdashboard));
             System.Windows.Forms.Label label3;
             this.Membership = new System.Windows.Forms.Button();
@@ -60,6 +61,18 @@
             this.button6 = new System.Windows.Forms.Button();
             this.Mybenefits = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Home = new System.Windows.Forms.Button();
+            this.Membership = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.Event = new System.Windows.Forms.Button();
+            this.CONBTN = new System.Windows.Forms.Button();
+            this.ChatBox_Button = new System.Windows.Forms.Button();
+            this.Profile = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblmembershiptype = new System.Windows.Forms.Label();
             this.lblinterest = new System.Windows.Forms.Label();
@@ -74,11 +87,10 @@
             this.button1 = new System.Windows.Forms.Button();
             label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Memebrship_icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Event_icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Chat_icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Home_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_icon)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -89,52 +101,110 @@
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Membership
+            // label1
             // 
-            this.Membership.Location = new System.Drawing.Point(68, 236);
-            this.Membership.Name = "Membership";
-            this.Membership.Size = new System.Drawing.Size(105, 32);
-            this.Membership.TabIndex = 37;
-            this.Membership.Text = "Membership";
-            this.Membership.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(842, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 30);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Welcome Back!\r\n";
             // 
-            // Event
+            // label4
             // 
-            this.Event.Location = new System.Drawing.Point(68, 191);
-            this.Event.Name = "Event";
-            this.Event.Size = new System.Drawing.Size(105, 35);
-            this.Event.TabIndex = 36;
-            this.Event.Text = "Event";
-            this.Event.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(921, 281);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(326, 40);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Benifits Overeview";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ChatBox_Button
+            // button6
             // 
-            this.ChatBox_Button.Location = new System.Drawing.Point(68, 151);
-            this.ChatBox_Button.Name = "ChatBox_Button";
-            this.ChatBox_Button.Size = new System.Drawing.Size(105, 32);
-            this.ChatBox_Button.TabIndex = 35;
-            this.ChatBox_Button.Text = "ChatBox";
-            this.ChatBox_Button.UseVisualStyleBackColor = true;
-            this.ChatBox_Button.Click += new System.EventHandler(this.ChatBox_Button_Click);
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Location = new System.Drawing.Point(1135, 376);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(171, 43);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "Used Benifts";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // Mybenefits
+            // 
+            this.Mybenefits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Mybenefits.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mybenefits.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Mybenefits.Location = new System.Drawing.Point(832, 375);
+            this.Mybenefits.Name = "Mybenefits";
+            this.Mybenefits.Size = new System.Drawing.Size(165, 43);
+            this.Mybenefits.TabIndex = 4;
+            this.Mybenefits.Text = "My Benifits";
+            this.Mybenefits.UseVisualStyleBackColor = false;
+            this.Mybenefits.Click += new System.EventHandler(this.Mybenefits_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panelContent);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1346, 790);
+            this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightCoral;
+            this.panel1.Controls.Add(this.Home);
+            this.panel1.Controls.Add(this.Membership);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Profile_icon);
+            this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Controls.Add(this.Event);
+            this.panel1.Controls.Add(this.CONBTN);
+            this.panel1.Controls.Add(this.Home_icon);
+            this.panel1.Controls.Add(this.ChatBox_Button);
+            this.panel1.Controls.Add(this.Chat_icon);
+            this.panel1.Controls.Add(this.Event_icon);
+            this.panel1.Controls.Add(this.Memebrship_icon);
+            this.panel1.Controls.Add(this.Profile);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 160);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 618);
+            this.panel1.TabIndex = 53;
             // 
             // Home
             // 
-            this.Home.Location = new System.Drawing.Point(68, 56);
+            this.Home.Location = new System.Drawing.Point(72, 29);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(105, 34);
+            this.Home.Size = new System.Drawing.Size(118, 34);
             this.Home.TabIndex = 34;
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
             // 
-            // Profile
+            // Membership
             // 
-            this.Profile.Location = new System.Drawing.Point(68, 104);
-            this.Profile.Name = "Profile";
-            this.Profile.Size = new System.Drawing.Size(105, 34);
-            this.Profile.TabIndex = 33;
-            this.Profile.Text = "Profile";
-            this.Profile.UseVisualStyleBackColor = true;
-            this.Profile.Click += new System.EventHandler(this.Profile_Click);
+            this.Membership.Location = new System.Drawing.Point(72, 209);
+            this.Membership.Name = "Membership";
+            this.Membership.Size = new System.Drawing.Size(118, 32);
+            this.Membership.TabIndex = 37;
+            this.Membership.Text = "Membership";
+            this.Membership.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
@@ -146,17 +216,26 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // Event
+            // 
+            this.Event.Location = new System.Drawing.Point(72, 164);
+            this.Event.Name = "Event";
+            this.Event.Size = new System.Drawing.Size(118, 35);
+            this.Event.TabIndex = 36;
+            this.Event.Text = "Event";
+            this.Event.UseVisualStyleBackColor = true;
+            // 
             // CONBTN
             // 
-            this.CONBTN.Location = new System.Drawing.Point(64, 276);
+            this.CONBTN.Location = new System.Drawing.Point(72, 247);
             this.CONBTN.Name = "CONBTN";
-            this.CONBTN.Size = new System.Drawing.Size(109, 45);
+            this.CONBTN.Size = new System.Drawing.Size(118, 37);
             this.CONBTN.TabIndex = 45;
-            this.CONBTN.Text = "DIGITAL CONTENT";
+            this.CONBTN.Text = "Digital Content";
             this.CONBTN.UseVisualStyleBackColor = true;
             this.CONBTN.Click += new System.EventHandler(this.CONBTN_Click);
             // 
-            // panel1
+            // ChatBox_Button
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.CHAT);
@@ -191,13 +270,15 @@
             // 
             // panel7
             // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel7.Location = new System.Drawing.Point(179, 113);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(461, 157);
-            this.panel7.TabIndex = 16;
+            this.Profile.Location = new System.Drawing.Point(72, 77);
+            this.Profile.Name = "Profile";
+            this.Profile.Size = new System.Drawing.Size(118, 34);
+            this.Profile.TabIndex = 33;
+            this.Profile.Text = "Profile";
+            this.Profile.UseVisualStyleBackColor = true;
+            this.Profile.Click += new System.EventHandler(this.Profile_Click);
             // 
-            // pictureBox1
+            // label10
             // 
             this.pictureBox1.Image = global::SoftwareEng2024.Properties.Resources.logout;
             this.pictureBox1.Location = new System.Drawing.Point(3, 497);
@@ -207,57 +288,70 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
-            // Memebrship_icon
+            // label9
             // 
-            this.Memebrship_icon.Image = global::SoftwareEng2024.Properties.Resources.membership;
-            this.Memebrship_icon.Location = new System.Drawing.Point(18, 236);
-            this.Memebrship_icon.Name = "Memebrship_icon";
-            this.Memebrship_icon.Size = new System.Drawing.Size(44, 34);
-            this.Memebrship_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Memebrship_icon.TabIndex = 42;
-            this.Memebrship_icon.TabStop = false;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(205, 490);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(979, 76);
+            this.label9.TabIndex = 51;
+            this.label9.Text = "Together we can build a more inclusive and ecological economy in Cambridge.\r\n\r\nFo" +
+    "r every 100 paying members, 25 memberships are offered free to people facing fin" +
+    "ancial hardship.\r\n";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Event_icon
+            // button1
             // 
-            this.Event_icon.Image = global::SoftwareEng2024.Properties.Resources.calendar_check;
-            this.Event_icon.Location = new System.Drawing.Point(18, 191);
-            this.Event_icon.Name = "Event_icon";
-            this.Event_icon.Size = new System.Drawing.Size(44, 34);
-            this.Event_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Event_icon.TabIndex = 41;
-            this.Event_icon.TabStop = false;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(645, 569);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 38);
+            this.button1.TabIndex = 49;
+            this.button1.Text = "Learn More";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // Chat_icon
+            // panel3
             // 
-            this.Chat_icon.Image = global::SoftwareEng2024.Properties.Resources.message;
-            this.Chat_icon.Location = new System.Drawing.Point(18, 149);
-            this.Chat_icon.Name = "Chat_icon";
-            this.Chat_icon.Size = new System.Drawing.Size(44, 34);
-            this.Chat_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Chat_icon.TabIndex = 40;
-            this.Chat_icon.TabStop = false;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(124)))), ((int)(((byte)(126)))));
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.panel8);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1520, 160);
+            this.panel3.TabIndex = 13;
             // 
-            // Home_icon
+            // panel8
             // 
-            this.Home_icon.Image = global::SoftwareEng2024.Properties.Resources.home;
-            this.Home_icon.Location = new System.Drawing.Point(18, 56);
-            this.Home_icon.Name = "Home_icon";
-            this.Home_icon.Size = new System.Drawing.Size(44, 34);
-            this.Home_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Home_icon.TabIndex = 39;
-            this.Home_icon.TabStop = false;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(124)))), ((int)(((byte)(126)))));
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel8.Controls.Add(this.lblmembershiptype);
+            this.panel8.Controls.Add(this.lblinterest);
+            this.panel8.Location = new System.Drawing.Point(841, 39);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(491, 118);
+            this.panel8.TabIndex = 16;
             // 
-            // Profile_icon
+            // lblmembershiptype
             // 
-            this.Profile_icon.Image = global::SoftwareEng2024.Properties.Resources.user;
-            this.Profile_icon.Location = new System.Drawing.Point(18, 104);
-            this.Profile_icon.Name = "Profile_icon";
-            this.Profile_icon.Size = new System.Drawing.Size(44, 34);
-            this.Profile_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Profile_icon.TabIndex = 38;
-            this.Profile_icon.TabStop = false;
+            this.lblmembershiptype.AutoSize = true;
+            this.lblmembershiptype.BackColor = System.Drawing.Color.Transparent;
+            this.lblmembershiptype.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmembershiptype.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblmembershiptype.Location = new System.Drawing.Point(0, 48);
+            this.lblmembershiptype.Name = "lblmembershiptype";
+            this.lblmembershiptype.Size = new System.Drawing.Size(195, 23);
+            this.lblmembershiptype.TabIndex = 22;
+            this.lblmembershiptype.Text = "Membership Type :";
             // 
-            // label1
+            // lblinterest
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -268,7 +362,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "WELCOME BACK MEMBER!";
             // 
-            // panel5
+            // label3
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -284,17 +378,25 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(3, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 25);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "EVENTS ";
+            this.panelContent.BackColor = System.Drawing.Color.LightGray;
+            this.panelContent.Controls.Add(this.label8);
+            this.panelContent.Controls.Add(this.button8);
+            this.panelContent.Controls.Add(this.button9);
+            this.panelContent.Controls.Add(this.label5);
+            this.panelContent.Controls.Add(this.label4);
+            this.panelContent.Controls.Add(this.label7);
+            this.panelContent.Controls.Add(this.button1);
+            this.panelContent.Controls.Add(this.label10);
+            this.panelContent.Controls.Add(this.button6);
+            this.panelContent.Controls.Add(this.label9);
+            this.panelContent.Controls.Add(this.Mybenefits);
+            this.panelContent.Controls.Add(this.label6);
+            this.panelContent.Location = new System.Drawing.Point(196, 160);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1324, 618);
+            this.panelContent.TabIndex = 54;
             // 
-            // button9
+            // timer1
             // 
             this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -308,14 +410,14 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button8.Location = new System.Drawing.Point(30, 132);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(116, 47);
             this.button8.TabIndex = 1;
-            this.button8.Text = "EXPLORE EVENTS";
+            this.button8.Text = "Explore Events";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // button10
@@ -363,7 +465,7 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "BENEFITS OVERVIEW";
             // 
-            // panel6
+            // label5
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.lblinterest);
@@ -388,7 +490,7 @@
             this.BTNMYBENEFITS.TabIndex = 15;
             this.BTNMYBENEFITS.Paint += new System.Windows.Forms.PaintEventHandler(this.BTNMYBENEFITS_Paint);
             // 
-            // button6
+            // Profile_icon
             // 
             this.button6.BackColor = System.Drawing.Color.IndianRed;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -400,7 +502,7 @@
             this.button6.Text = "USED BENEFITS";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // Mybenefits
+            // Home_icon
             // 
             this.Mybenefits.BackColor = System.Drawing.Color.IndianRed;
             this.Mybenefits.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -413,7 +515,7 @@
             this.Mybenefits.UseVisualStyleBackColor = false;
             this.Mybenefits.Click += new System.EventHandler(this.Mybenefits_Click);
             // 
-            // panel2
+            // Chat_icon
             // 
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
             this.panel2.Controls.Add(this.button1);
@@ -433,7 +535,7 @@
             this.panel2.TabIndex = 5;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // panel8
+            // Event_icon
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel8.Location = new System.Drawing.Point(197, 401);
@@ -441,7 +543,7 @@
             this.panel8.Size = new System.Drawing.Size(573, 87);
             this.panel8.TabIndex = 16;
             // 
-            // lblmembershiptype
+            // Memebrship_icon
             // 
             this.lblmembershiptype.AutoSize = true;
             this.lblmembershiptype.BackColor = System.Drawing.Color.IndianRed;
@@ -453,7 +555,7 @@
             this.lblmembershiptype.TabIndex = 22;
             this.lblmembershiptype.Text = "MEMBERSHIP TYPE";
             // 
-            // lblinterest
+            // button2
             // 
             this.lblinterest.AutoSize = true;
             this.lblinterest.BackColor = System.Drawing.Color.IndianRed;
@@ -592,8 +694,19 @@
             this.Name = "Memberdashboard";
             this.Text = "Memberdashboard";
             this.Load += new System.EventHandler(this.Memberdashboard_Load);
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panelContent.ResumeLayout(false);
+            this.panelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Profile_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Home_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chat_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Event_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Memebrship_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Event_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Chat_icon)).EndInit();
@@ -617,6 +730,22 @@
         }
 
         #endregion
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button Mybenefits;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label lblinterest;
+        private System.Windows.Forms.Label lblmembershiptype;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Membership;
         private System.Windows.Forms.PictureBox Profile_icon;
         private System.Windows.Forms.Button Event;
@@ -631,9 +760,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button CONBTN;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelContent;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button10;
