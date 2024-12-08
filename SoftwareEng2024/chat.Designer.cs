@@ -31,11 +31,7 @@ namespace SoftwareEng2024
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvAllChats = new System.Windows.Forms.DataGridView();
-            this.recentchat = new System.Windows.Forms.Label();
-            this.search = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.dgvMembers = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnChat = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -52,10 +48,13 @@ namespace SoftwareEng2024
             this.Event = new System.Windows.Forms.Button();
             this.Profile_icon = new System.Windows.Forms.PictureBox();
             this.Membership = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dgvAllChats = new System.Windows.Forms.DataGridView();
+            this.recentchat = new System.Windows.Forms.Label();
+            this.search = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.dgvMembers = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllChats)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Memebrship_icon)).BeginInit();
@@ -63,11 +62,14 @@ namespace SoftwareEng2024
             ((System.ComponentModel.ISupportInitialize)(this.Chat_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllChats)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dgvAllChats);
@@ -81,58 +83,15 @@ namespace SoftwareEng2024
             this.panel1.Size = new System.Drawing.Size(1058, 659);
             this.panel1.TabIndex = 0;
             // 
-            // dgvAllChats
+            // label2
             // 
-            this.dgvAllChats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllChats.Location = new System.Drawing.Point(176, 259);
-            this.dgvAllChats.Name = "dgvAllChats";
-            this.dgvAllChats.RowHeadersWidth = 51;
-            this.dgvAllChats.RowTemplate.Height = 24;
-            this.dgvAllChats.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllChats.Size = new System.Drawing.Size(882, 398);
-            this.dgvAllChats.TabIndex = 21;
-            this.dgvAllChats.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllChats_CellContentClick);
-            // 
-            // recentchat
-            // 
-            this.recentchat.AutoSize = true;
-            this.recentchat.BackColor = System.Drawing.Color.IndianRed;
-            this.recentchat.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recentchat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.recentchat.Location = new System.Drawing.Point(184, 222);
-            this.recentchat.Name = "recentchat";
-            this.recentchat.Size = new System.Drawing.Size(115, 25);
-            this.recentchat.TabIndex = 20;
-            this.recentchat.Text = "Recent Chat";
-            // 
-            // search
-            // 
-            this.search.Location = new System.Drawing.Point(633, 118);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(150, 34);
-            this.search.TabIndex = 2;
-            this.search.Text = "search";
-            this.search.UseVisualStyleBackColor = true;
-            this.search.Click += new System.EventHandler(this.search_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(179, 85);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(790, 22);
-            this.txtSearch.TabIndex = 1;
-            // 
-            // dgvMembers
-            // 
-            this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMembers.Location = new System.Drawing.Point(179, 113);
-            this.dgvMembers.Name = "dgvMembers";
-            this.dgvMembers.RowHeadersWidth = 51;
-            this.dgvMembers.RowTemplate.Height = 24;
-            this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMembers.Size = new System.Drawing.Size(448, 106);
-            this.dgvMembers.TabIndex = 0;
-            this.dgvMembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentClick);
+            this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Brown;
+            this.label2.Location = new System.Drawing.Point(183, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(337, 57);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Together Culture";
             // 
             // panel2
             // 
@@ -298,15 +257,67 @@ namespace SoftwareEng2024
             this.Membership.Text = "Membership";
             this.Membership.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // dgvAllChats
             // 
-            this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(183, 2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 57);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Together Culture";
+            this.dgvAllChats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAllChats.Location = new System.Drawing.Point(176, 259);
+            this.dgvAllChats.Name = "dgvAllChats";
+            this.dgvAllChats.RowHeadersWidth = 51;
+            this.dgvAllChats.RowTemplate.Height = 24;
+            this.dgvAllChats.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAllChats.Size = new System.Drawing.Size(882, 398);
+            this.dgvAllChats.TabIndex = 21;
+            this.dgvAllChats.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllChats_CellContentClick);
+            // 
+            // recentchat
+            // 
+            this.recentchat.AutoSize = true;
+            this.recentchat.BackColor = System.Drawing.Color.IndianRed;
+            this.recentchat.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recentchat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.recentchat.Location = new System.Drawing.Point(198, 222);
+            this.recentchat.Name = "recentchat";
+            this.recentchat.Size = new System.Drawing.Size(115, 25);
+            this.recentchat.TabIndex = 20;
+            this.recentchat.Text = "Recent Chat";
+            // 
+            // search
+            // 
+            this.search.Location = new System.Drawing.Point(633, 118);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(150, 34);
+            this.search.TabIndex = 2;
+            this.search.Text = "search";
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(179, 85);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(790, 22);
+            this.txtSearch.TabIndex = 1;
+            // 
+            // dgvMembers
+            // 
+            this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMembers.Location = new System.Drawing.Point(179, 113);
+            this.dgvMembers.Name = "dgvMembers";
+            this.dgvMembers.RowHeadersWidth = 51;
+            this.dgvMembers.RowTemplate.Height = 24;
+            this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMembers.Size = new System.Drawing.Size(448, 106);
+            this.dgvMembers.TabIndex = 0;
+            this.dgvMembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(564, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // chat
             // 
@@ -319,8 +330,6 @@ namespace SoftwareEng2024
             this.Load += new System.EventHandler(this.chat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllChats)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Memebrship_icon)).EndInit();
@@ -328,6 +337,8 @@ namespace SoftwareEng2024
             ((System.ComponentModel.ISupportInitialize)(this.Chat_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllChats)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,5 +368,6 @@ namespace SoftwareEng2024
         private PictureBox Profile_icon;
         private Button Membership;
         private Label label2;
+        private Button button1;
     }
 }
